@@ -9,6 +9,16 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "lint-staged": {
+    "*.js": [
+      "npm run pretty",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankit-cn-47/husky-sample.git"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.14",
@@ -28,10 +38,11 @@
     "@angular/cli": "~8.3.24",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "husky": "^4.2.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",

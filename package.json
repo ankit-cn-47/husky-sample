@@ -7,9 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "precommit": "npm run lint",
-    "prepush": "ng lint && ng build --prod"
+    "e2e": "ng e2e"
   },
   "hooks": {
     "pre-commit": "npm run lint",

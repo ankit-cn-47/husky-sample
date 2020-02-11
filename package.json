@@ -11,11 +11,9 @@
     "precommit": "npm run lint",
     "prepush": "ng lint && ng build --prod"
   },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint",
-      "git add"
-    ]
+  "hooks": {
+    "pre-commit": "npm run lint",
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
   },
   "repository": {
     "type": "git",
